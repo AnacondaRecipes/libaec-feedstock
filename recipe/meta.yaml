@@ -37,8 +37,8 @@ about:
   home: https://gitlab.dkrz.de/k202009/libaec
   license: BSD-2-Clause
   license_family: BSD
-  license_file: Copyright.txt
-  summary: 'Adaptive Entropy Coding library'
+  license_file: LICENSE.txt
+  summary: Adaptive Entropy Coding library
   description: |
     Libaec provides fast lossless compression of 1 up to 32 bit wide signed or unsigned integers (samples).
     The library achieves best results for low entropy data as often encountered in space imaging instrument
@@ -47,6 +47,7 @@ about:
     Libaec implements Golomb-Rice coding as defined in the Space Data System Standard documents 121.0-B-2
     and 120.0-G-2.
   dev_url: https://gitlab.dkrz.de/k202009/libaec
+  doc_url: https://gitlab.dkrz.de/k202009/libaec/-/blob/master/README.md
 
 extra:
   recipe-maintainers:
