@@ -13,5 +13,5 @@ cmake -LAH -G "Ninja"                                                     ^
 
 if errorlevel 1 exit 1
 
-ninja install
+ninja install -j%CPU_COUNT%
 if errorlevel 1 exit 1
