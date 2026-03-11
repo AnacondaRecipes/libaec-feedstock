@@ -18,23 +18,23 @@ build:
 requirements:
   build:
     - cmake
-    - make  # [not win]
-    - ninja  # [win]
+    - make     # [not win]
+    - ninja    # [win]
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
 
 test:
   commands:
-    - test -f ${PREFIX}/lib/libaec${SHLIB_EXT}  # [not win]
-    - test -f ${PREFIX}/lib/libsz${SHLIB_EXT}  # [not win]
-    - test -f ${PREFIX}/include/libaec.h  # [not win]
-    - test -f ${PREFIX}/include/szlib.h  # [not win]
-    - if not exist %LIBRARY_LIB%\\aec.lib exit 1  # [win]
-    - if not exist %LIBRARY_BIN%\\aec.dll exit 1  # [win]
-    - if not exist %LIBRARY_LIB%\\szip.lib exit 1  # [win]
-    - if not exist %LIBRARY_BIN%\\szip.dll exit 1  # [win]
-    - if not exist %LIBRARY_INC%\\libaec.h exit 1  # [win]
-    - if not exist %LIBRARY_INC%\\szlib.h exit 1  # [win]
+    - test -f ${PREFIX}/lib/libaec${SHLIB_EXT}        # [not win]
+    - test -f ${PREFIX}/lib/libsz${SHLIB_EXT}         # [not win]
+    - test -f ${PREFIX}/include/libaec.h              # [not win]
+    - test -f ${PREFIX}/include/szlib.h               # [not win]
+    - if not exist %LIBRARY_LIB%\\aec.lib exit 1      # [win]
+    - if not exist %LIBRARY_BIN%\\aec.dll exit 1      # [win]
+    - if not exist %LIBRARY_LIB%\\szip.lib exit 1     # [win]
+    - if not exist %LIBRARY_BIN%\\szip.dll exit 1     # [win]
+    - if not exist %LIBRARY_INC%\\libaec.h exit 1     # [win]
+    - if not exist %LIBRARY_INC%\\szlib.h exit 1      # [win]
 
 about:
   home: https://gitlab.dkrz.de/k202009/libaec
