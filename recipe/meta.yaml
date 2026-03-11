@@ -21,7 +21,6 @@ requirements:
     - make     # [not win]
     - ninja    # [win]
     - {{ compiler('c') }}
-    - {{ compiler('cxx') }}
 
 test:
   commands:
