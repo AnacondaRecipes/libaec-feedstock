@@ -9,6 +9,8 @@ cmake -LAH -G "Ninja"                                                     ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%                               ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX%                                  ^
     -DBUILD_SHARED_LIBS=1                                                 ^
+    -DBUILD_STATIC_LIBS=OFF                                               ^
+    -DBUILD_SHARED_LIBS=ON                                                ^
     ..
 
 if errorlevel 1 exit 1
