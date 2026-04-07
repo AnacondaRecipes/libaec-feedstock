@@ -1,4 +1,5 @@
 anaconda_config_version: 1
 upstream_sources:
-  - github:
-      identifier: MathisRosenhauer/libaec
+  - gitlab:
+      identifier: k202009/libaec
+      host: gitlab.dkrz.de
