@@ -1,5 +1,6 @@
 anaconda_config_version: 1
 upstream_sources:
   - gitlab:
-      identifier: k202009/libaec
+      identifier: dkrz-sw/libaec
       host: gitlab.dkrz.de
+      use_max_tag: true
