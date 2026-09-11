@@ -8,6 +8,7 @@ cmake -LAH -G "Ninja"                                                     ^
     -DCMAKE_BUILD_TYPE="Release"                                          ^
     -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%                               ^
     -DCMAKE_PREFIX_PATH=%LIBRARY_PREFIX%                                  ^
+    -DCMAKE_POLICY_VERSION_MINIMUM=3.5                                    ^
     -DBUILD_SHARED_LIBS=1                                                 ^
     -DBUILD_STATIC_LIBS=OFF                                               ^
     -DBUILD_SHARED_LIBS=ON                                                ^
